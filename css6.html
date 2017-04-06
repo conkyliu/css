@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css文字</title>
+    <style>
+        <!-- 字体系列 -->
+        p.serif{font-family:"Times New Roman",Times,serif;}
+        p,sansserif{font-famliy:Arial,Helvetica,sans-sserif;}
+        <!-- 字体样式 -->
+        p.normal {font-style:normal;}
+        p.italic {font-style:italic;}
+        p.oblique {font-style:oblique;}
+        <!-- 字体大小像素 -->
+        h1 {font-size:40px;2.5em;} /* 40px/16=2.5em */
+        h2 {font-size:30px; 1.875em;} /* 30px/16=1.875em */
+        p  {font-size:14px;0.875em;} /* 14px/16=0.875em */
+        body {font-size:100%;}
+        <!-- 字体加粗 -->
+        p.normal {font-weight:normal;}
+        p.light {font-weight:light;}
+        p.thick {font-weight:bold;}
+        p.thicker {font-weight:900;}
+        <!-- 字体的转变 -->
+        p.normal {font-variant:normal;}
+        p.small {font-variant:small-caps;}
+        <!-- 在一个声明中的所有字体属性 -->
+        p.ex1
+        {
+            font:15px arial,sans-serif;
+        }
+        p.ex2
+        {
+            font:italic bold 12px/30px Georgia,serif;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS font-family</h1>
+<p class="serif">这一段的字体是Times New Roman.</p>
+<p class="sansserif">这一段的字体是Arial.</p>
+<p class="normal">正常显示</p>
+<p class="italic">以斜体字显示的文字</p>
+<p class="oblique">倾斜的文字</p>
+<h1>字体大小是40px</h1>
+<h2>字体大小是30px</h2>
+<p calss="noraml">正常字体</p>
+<p class="light">加粗字体</p>
+<p class="thick">加粗字体</p>
+<p class="thicker">加粗字体</p>
+<p class="normal">正常字体:conky you can be good</p>
+<p class="small">转变字体:coknky you can be good</p>
+<p class="exl">conky you can be good conky you can be good</p>
+<p class="ex2">conky you can be good conky you can be good</p>
+</body>
+</html>
