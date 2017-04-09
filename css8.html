@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css列表样式</title>
+    <style>
+        <!-- 不同的列表项标记 -->
+        ul.a {list-style-type:circle;}
+        ul.b {list-style-type:square;}
+        ol.c {list-style-type:upper-roman;}
+        ol.d {list-style-type:lower-alpha;}
+        <!-- 作为列表项标记的图像 -->
+        ul.e
+        {
+         list-style-image:url("http//www.w3cschool.cn/statics/images/w3c/sqpurple.gif");
+        }
+        <!-- 浏览器兼容性解决方案 -->
+        ul.f
+        {
+            list-style-type: none;
+            padding:0px;
+            margin:0px;
+        }
+        ul.f li.f
+        {
+            background-image:url("http//www.w3cschool.cn/statics/images/w3c/sqpurple.gif");
+            background-repeat:no-repeat;
+            background-position:0px 5px;
+            padding-left:14px;
+        }
+    </style>
+</head>
+<body>
+<p>无序列表实例:</p>
+<ul class="a">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>coca</li>
+</ul>
+<ul class="b">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>coca</li>
+</ul>
+<p>无序列表实例:</p>
+<ol class="c">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>coca</li>
+</ol>
+<ol class="d">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>coca</li>
+</ol>
+<ul class="e">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>coca</li>
+</ul>
+<ul class="f">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>coca</li>
+</ul>
+</body>
+</html>
