@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> css table</title>
+</head>
+<style>
+    table.a {border-collapse:collapse;} /* 显示一个表的放边框 */
+    table,th,td
+    {
+        border:1px solid black;
+    } /* 表格边框 */
+    table.b {width:100%}; /* 表格宽度 */
+    th.b {height:50px;}  /* 表格高度 */
+    td.b {text-align:right;} /* 表格文字水平对齐 */
+    td.c {vertical-align:bottom;height:50px;} /* 表格文字垂直对齐 */
+    td.d {padding:15px;} /* 表格填充 */
+    th.f {background:green;color:white;}/* 表格颜色 */
+    caption {caption-side:bottom;}
+</style>
+<body>
+<table>
+   <tr>
+       <th>firstname</th>
+       <th>lastname</th>
+   </tr>
+    <tr>
+        <td>liu</td>
+        <td>conky</td>
+    </tr>
+    <tr>
+        <td>yang</td>
+        <td>xiuling</td>
+    </tr>
+</table>
+<table class="a">
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+    </tr>
+    <tr>
+        <td>liu</td>
+        <td>conky</td>
+    </tr>
+    <tr>
+        <td>yang</td>
+        <td>xiuling</td>
+    </tr>
+</table>
+    <table class="b">
+        <caption>Table 1.1 Customers </caption>
+        <tr>
+            <th class="b">firstname</th>
+            <th class="b">lastname</th>
+        </tr>
+        <tr>
+            <td class="b">liu</td>
+            <td class="b">conky</td>
+        </tr>
+        <tr>
+            <td class="b">yang</td>
+            <td class="b">xiuling</td>
+        </tr>
+        </table>
+<table>
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+    </tr>
+    <tr>
+        <td class="c">liu</td>
+        <td class="c">conky</td>
+    </tr>
+    <tr>
+        <td class="c">yang</td>
+        <td class="c">xiuling</td>
+    </tr>
+</table>
+    <table>
+        <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+        </tr>
+        <tr>
+            <td class="d">liu</td>
+            <td class="d">conky</td>
+        </tr>
+        <tr>
+            <td class="d">yang</td>
+            <td class="d">xiuling</td>
+        </tr>
+    </table>
+<table>
+    <tr>
+        <th class="f">firstname</th>
+        <th class="f">lastname</th>
+    </tr>
+    <tr>
+        <td class="c">liu</td>
+        <td class="c">conky</td>
+    </tr>
+    <tr>
+        <td class="c">yang</td>
+        <td class="c">xiuling</td>
+    </tr>
+</table>
+</body>
+</html>
