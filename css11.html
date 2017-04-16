@@ -18,6 +18,12 @@
   p.one {border-style:solid;border-width:5px;} /* 边框宽度 */
   p.two {border-style:solid;border-width:medium;}
   p.three {border-style:solid;border-width:1px;}
+  p.four {border-style:solid;border-color:red;}  /* 边框颜色 */
+  p.five {border-style:solid;border-color:#98bf21;}
+  p.six {border-top-style:dotted;border-left-style:solid;
+      border-bottom-style:dashed;border-right-style:solid;} /* 单独设置各边 */
+  p.seven {border:5px solid red;} /* 简写属性 */
+  p.eight {border-style:solid;border-left-width:15px;} /* 设置左边框的宽度 */
 </style>
 <body>
 <p class="none">no border</p>
@@ -34,5 +40,13 @@
 <p class="two">some text</p>
 <p class="three">some text</p>
 <p><b>注意：</b> "border-width" 属性 如果单独使用则不起作用. 要先使用 "border-style" 属性来设置 borders .</p>
+<p class="four">A solid red borser</p>
+<p class="five">A solid green border</p>
+<p><b>注意:</b>"border-color" 属性 如果单独使用则不起作用. 要先使用 "border-style" 属性来设置 borders .</p>
+</p>
+<p class="six">2 different border styles.</p>
+<p class="seven">This is some text in a paragraph</p>
+<p class="eight"><b>注意：</b>"border-left-width" 单独使用没有效果.要先使用 "border-style" 属性设置borders.</p>
+</p>
 </body>
 </html>
