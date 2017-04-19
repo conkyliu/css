@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 分组和嵌套</title>
+</head>
+<style>
+    h1,h2,h3 {color:red;} /*分组选择器*/
+    p {color:blue;text-align:center;}
+    .marked {background:red;}
+    .marked p{color:white;}/* 嵌套选择器 */
+</style>
+<body>
+<h1>你好</h1>
+<h2>你好</h2>
+<h3>你好</h3>
+<p>This paragraph has blue text, and is center aligned.</p>
+<div class="marked">
+    <p>This paragraph has not blue text.</p>
+</div>
+<p>p elements inside a "marked" classed element keeps the alignment style, but has a different text color.</p>
+</p>
+</body>
+</html>
