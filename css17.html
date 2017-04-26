@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS display与visibility</title>
+</head>
+<style>
+   h1.hidden {visibility:hidden;} /*隐藏元素*/
+   h2.hidden {display:none;} /*隐藏元素*/
+   li {display:inline;} /*把列表项显示为内联元素*/
+    span {display:block;} /*把span元素作为块元素*/
+    tr.collapse {visibility:collapse;}
+</style>
+<body>
+<h1>this is a visible heading</h1>
+<h1 class="hidden">this is a hidden heading</h1>
+<p>注意:隐藏标题仍然占用空间</p>
+<h2>this is a visible heading</h2>
+<h2 class="hidden">this is a hidden heading</h2>
+<p>注意:隐藏标题没有占用空间</p>
+<p>display  this link list as a horizontal memu:</p>
+<ul>
+    <li><a href="http://www.w3cschool.cn/html/" target="_blank">HTML</a></li>
+    <li><a href="http://www.w3cschool.cn/css/" target="_blank">CSS</a></li>
+    <li><a href="http://www.w3cschool.cn/javascript/" target="_blank">JavaScript</a></li>
+    <li><a href="http://www.w3cschool.cn/XML/" target="_blank">XML</a></li>
+</ul>
+<h2>nirvana</h2>
+<span>record:mtv unplugged in new york</span>
+<span>year:1983</span>
+<h2>radiohead</h2>
+<span>record: ok computer</span>
+<span>year:1998</span>
+<table border="1">
+    <tr>
+        <td>peter</td>
+        <td>griffin</td>
+    </tr>
+    <tr class="collapse">
+        <td>lois</td>
+        <td>griffin</td>
+    </tr>
+</table>
+</body>
+</html>
