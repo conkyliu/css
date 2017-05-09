@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css float</title>
+    <style>
+        img {float:right;} /*向右浮动*/
+        .thumbnail {float:left;width:110px;height:90px;margin:5px;} /*彼此相邻的浮动元素*/
+        .text_line {clear:both;margin-bottom:2px;} /*清除浮动*/
+        div {float:right;width:120px;margin:0 0 15px 20px;padding:15px;
+            border:1px solid black;text-align:center;} /*标题和图片向右侧浮动*/
+        span {float:left;width=1.2em;font-size:400%;
+            font-family:algerian,courier;line-height:80%;} /*让段落的第一个字母浮动到左侧*/
+    </style>
+</head>
+<br>
+<p>在下面的段落中,我们添加了一个<b>float:right</b>的图片,导致图片将会浮动在段落的右边.</p>
+<p><img src="http://www.w3cschool.cn/attachments/cover/cover_css.png" width="100" height="100"/>
+    http://www.w3cschool.cn/attachments/cover/cover_css.png http://www.w3cschool.cn/attachments/cover/cover_css.png
+    http://www.w3cschool.cn/attachments/cover/cover_css.png http://www.w3cschool.cn/attachments/cover/cover_css.png
+    http://www.w3cschool.cn/attachments/cover/cover_css.png http://www.w3cschool.cn/attachments/cover/cover_css.png
+    http://www.w3cschool.cn/attachments/cover/cover_css.png http://www.w3cschool.cn/attachments/cover/cover_css.png
+</p>
+<h3>图片库</h3>
+<p>试着调整窗口,看看当图片没有足够的空间会发生什么.</p>
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis2_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis3_small.jpg" width="100" height="100"/>
+<img  class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis2_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis3_small.jpg" width="100" height="100"/>
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis2_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis3_small.jpg" width="100" height="100"/>
+<h3 class="text_line">第二行</h3>
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis2_small.jpg" width="100" height="100" />
+<img class="thumbnail" src="http://www.w3cschool.cn/statics/images/course/klematis3_small.jpg" width="100" height="100"/>
+<div>
+    <img src="http://www.w3cschool.cn/attachments/cover/cover_css.png" width="100" height="100"/>
+CSS is fun
+</div>
+<p>
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+</p>
+
+<p>
+    在上面的段落中,div元素是120像素宽,它包含了图像。
+    div元素会向右浮动。
+    Margins 被添加到div使得文本远离div。
+    Borders和padding被添加到div框架的图片和标题中
+</p>
+<p>
+    <span>这</span>是一些文本。
+    这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+</p>
+<p>
+    在上面的段落中, 第一个字嵌入在span 元素中。
+    这个 span 元素的宽度是当前字体大小的1.2倍。
+    这个 span 元素是当前字体的400%(相当大)， line-height 为80%。
+    文字的字体为"Algerian"。
+</p>
+</body>
+</html>
