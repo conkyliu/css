@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 组合选择符</title>
+    <style>
+        div p {background-color: #b2ff99;} /*后代选择器*/
+        div>p {background-color: #b2ff99;} /*子元素选择器*/
+        div+p {background-color: #b2ff99;} /*相邻元素选择器*/
+        div~p {background-color: #b2ff99;} /*普通相邻兄弟选择器*/
+
+
+    </style>
+</head>
+<body>
+<div>
+    <p>段落1在div中</p>
+</div>
+<p>段落2不在div中</p>
+</body>
+</html>
